@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@testworkspace/feature1": ["libs/feature1/src/index.ts"],
+      "@testworkspace/feature2": ["libs/feature2/src/index.ts"],
+      "@testworkspace/feature3": ["libs/feature3/src/index.ts"],
+      "@testworkspace/shared-feature-statefull": [
+        "libs/shared-feature-statefull/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

@@ -1,0 +1,15 @@
+<p>
+  This example shows three features with own routes which load data - pokemons
+  in this case - storing then _in their own state_. Every module has its own
+  actions to load the pokemon, own effects to fire the request, own reducer to
+  handle the actions and stores the data for itself on the state. The shared
+  feature providing the pokemon model and the service is completely stateless.
+  But the code for the actions, effects and reducers is written in every module
+  as a consequence.
+</p>
+
+<button [routerLink]="['feature1']">Load Feature 1</button>
+<button [routerLink]="['feature2']">Load Feature 2</button>
+<button [routerLink]="['feature3']">Load Feature 3</button>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "feature1": "libs/feature1",
+    "feature2": "libs/feature2",
+    "feature3": "libs/feature3",
+    "shared-feature-stateless": "libs/shared-feature-stateless",
+    "testapp": "apps/testapp",
+    "testapp-e2e": "apps/testapp-e2e"
+  }
+}

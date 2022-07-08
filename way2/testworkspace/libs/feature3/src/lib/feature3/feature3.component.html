@@ -1,0 +1,7 @@
+<p>Welcome to Feature 3</p>
+
+<button (click)="loadData()">Load Data from Shared Feature</button>
+
+<app-shared-feature-list
+  [pokemons]="pokemons$ | async"
+></app-shared-feature-list>

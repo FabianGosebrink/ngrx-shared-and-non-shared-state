@@ -1,0 +1,22 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/feature1/src",
+  "prefix": "testworkspace",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/feature1"],
+      "options": {
+        "jestConfig": "libs/feature1/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/feature1/**/*.ts", "libs/feature1/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}

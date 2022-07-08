@@ -1,0 +1,14 @@
+<p>
+  This example shows three features with own routes which load data - pokemons
+  in this case - storing them _in the state of a shared module_. They all use
+  the actions and selectors etc from the shared module as the shared module is
+  stateful. Therefore the actions, selectors, etc has to be written only one
+  time in the shared module and can be reused. On the other hand the state is
+  shared and needs to be maintained then.
+</p>
+
+<button [routerLink]="['feature1']">Load Feature 1</button>
+<button [routerLink]="['feature2']">Load Feature 2</button>
+<button [routerLink]="['feature3']">Load Feature 3</button>
+
+<router-outlet></router-outlet>
